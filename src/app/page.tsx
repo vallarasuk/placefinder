@@ -1,10 +1,12 @@
 // src/app/page.tsx
 import Header from "@/components/layout/Header";
 import PlacesPage from "@/components/places/page";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen w-full overflow-x-hidden bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 text-gray-800">
+      <GoogleAnalytics />
       {/* Sticky Header */}
       <Header showPlaces={true} />
 
